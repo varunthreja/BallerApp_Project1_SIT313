@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Ballers.SignInPage" xmlns:custom="clr-namespace:Ballers" NavigationPage.HasNavigationBar="false" BackgroundColor="Black">
+    <AbsoluteLayout>
+        <Image x:Name="BgImage" Source="welcomeBackgroundImage.png" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0" AbsoluteLayout.LayoutFlags="All" />
+        <StackLayout Padding="10,40,10,0" AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0" AbsoluteLayout.LayoutFlags="All">
+            <ScrollView>
+            <StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Image Source="logo" HeightRequest="150" WidthRequest="100" />
+            </StackLayout>
+            <StackLayout Spacing="10" VerticalOptions="Center">
+                <Label Text="Email" TextColor="White"/>
+                <custom:CustomEntry x:Name="entryEmail" BorderWidth="1" CornerRadius="10" IsCurvedCornersEnabled="True" BorderColor="#1E4677" FontSize="17" HeightRequest="50" Placeholder="Dimitri@ballerprofile.com" TextColor="White" FontAttributes="Bold"
+                    WidthRequest="100" BackgroundColor="Transparent"/>
+                <Label Text="Password" TextColor="White"/>
+                <custom:CustomEntry x:Name="entryPassword" BorderWidth="1" IsPassword="true" CornerRadius="10" IsCurvedCornersEnabled="True" BorderColor="#1E4677" FontSize="17" HeightRequest="50" Placeholder="............." TextColor="White" FontAttributes="Bold"
+                    WidthRequest="100" BackgroundColor="Transparent"/>
+                <StackLayout HorizontalOptions="End" x:Name="forgotPassword">
+                    <Label Text="Forgot your password?" x:Name="lblForgotPassword" TextColor="#1E4677" HorizontalTextAlignment="Start" />
+                    <BoxView BackgroundColor="#1E4677" HorizontalOptions="Start" WidthRequest="180" HeightRequest="1" Margin="0,-8,0,0" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,120,0,10">
+                <Button Text="Log in" WidthRequest="130" BorderRadius="23" TextColor="White" BackgroundColor="#1E4677" Font="Bold, 15" Clicked="btnSignIn_Clicked"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Don't have a BallersProfile?" TextColor="White" HorizontalTextAlignment="Center" />
+                <StackLayout x:Name="lblSignUp">
+                    <Label Text="Sign me up" TextColor="#1E4677" HorizontalTextAlignment="Center" />
+                    <BoxView BackgroundColor="#1E4677" HeightRequest="1"  Margin="0,-8,0,0" />
+                </StackLayout>
+            </StackLayout>
+                </StackLayout>
+                </ScrollView>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

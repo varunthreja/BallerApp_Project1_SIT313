@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Ballers.TeamMembersListPage" xmlns:local="clr-namespace:Ballers" NavigationPage.HasNavigationBar="false" xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations">
+    <ContentPage.BindingContext>
+        <local:PlayerViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="primary">#37a6cd</Color>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <OnPlatform x:Key="TitleEnable" x:TypeArguments="x:Boolean" Android="true" iOS="true" WinPhone="false" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <StackLayout Padding="20,30,20,0">
+            <ListView ItemsSource="{Binding _PlayerModel}" HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Frame BorderColor="#37a6cd" Margin="5,6,5,5">
+                                    <StackLayout Orientation="Horizontal">
+                                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                            <StackLayout HorizontalOptions="Center">
+                                                <ff:CachedImage Source="{Binding playerImage}" HeightRequest="100" WidthRequest="100">
+                                                    <ff:CachedImage.Transformations>
+                                                        <ffTransformations:RoundedTransformation Radius="240" />
+                                                    </ff:CachedImage.Transformations>
+                                                </ff:CachedImage>
+                                            </StackLayout>
+                                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,5,0,0">
+                                                <Label Text="{Binding playerName}" VerticalTextAlignment="Center" TextColor="Teal" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Font="Bold,15" Opacity="0.7" />
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.Footer>
+                    <Label />
+                </ListView.Footer>
+            </ListView>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" HeightRequest="50" BackgroundColor="Black">
+            <Button Text="Done" Font="Bold,Italic, 25" VerticalOptions="Center" BackgroundColor="Black" TextColor="White" Clicked="btnJoinRequest_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

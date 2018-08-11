@@ -1,0 +1,17 @@
+/Users/devmaran/Documents/xamarin_project/Ballers/Ballers/bin/Debug/netstandard2.0/Ballers.deps.json
+/Users/devmaran/Documents/xamarin_project/Ballers/Ballers/bin/Debug/netstandard2.0/Ballers.dll
+/Users/devmaran/Documents/xamarin_project/Ballers/Ballers/bin/Debug/netstandard2.0/Ballers.pdb
+/Users/devmaran/Documents/xamarin_project/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.csproj.CoreCompileInputs.cache
+/Users/devmaran/Documents/xamarin_project/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.AssemblyInfoInputs.cache
+/Users/devmaran/Documents/xamarin_project/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.AssemblyInfo.cs
+/Users/devmaran/Documents/xamarin_project/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.dll
+/Users/devmaran/Documents/xamarin_project/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.pdb
+/Users/varunthreja/Desktop/Ballers/Ballers/bin/Debug/netstandard2.0/Ballers.deps.json
+/Users/varunthreja/Desktop/Ballers/Ballers/bin/Debug/netstandard2.0/Ballers.dll
+/Users/varunthreja/Desktop/Ballers/Ballers/bin/Debug/netstandard2.0/Ballers.pdb
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.csprojResolveAssemblyReference.cache
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.csproj.CoreCompileInputs.cache
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.AssemblyInfoInputs.cache
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.AssemblyInfo.cs
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.dll
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Debug/netstandard2.0/Ballers.pdb

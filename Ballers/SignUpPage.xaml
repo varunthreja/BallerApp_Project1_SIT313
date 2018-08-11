@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Ballers.SignUpPage" xmlns:custom="clr-namespace:Ballers" Title="Sign Up">
+    <ScrollView Padding="0,0,0,20">
+        <StackLayout Padding="10,10,10,0">
+            <StackLayout HorizontalOptions="Center">
+                <Image Source="logo" HeightRequest="150" WidthRequest="100" />
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <Label HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Create your " FontAttributes="Italic, Bold" FontSize="30" />
+                            <Span Text="Baller" ForegroundColor="Red" FontAttributes="Bold,Italic" FontSize="30" />
+                            <Span Text="Profile" FontAttributes="Bold,Italic" FontSize="30" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <StackLayout Spacing="10" Margin="0,20,0,0" VerticalOptions="Center">
+                <custom:CustomEntry x:Name="entryUsername" Margin="0,10,0,0" BorderWidth="1" BackgroundColor="Transparent" CornerRadius="10" IsCurvedCornersEnabled="True" BorderColor="#1E4677" FontSize="17" HeightRequest="50" Placeholder="Username" TextColor="Black"
+                    FontAttributes="Bold" WidthRequest="100" />
+                <custom:CustomEntry x:Name="entryEmail" BorderWidth="1" CornerRadius="10" BackgroundColor="Transparent" IsCurvedCornersEnabled="True" BorderColor="#1E4677" FontSize="17" HeightRequest="50" Placeholder="Email Address" TextColor="Black" FontAttributes="Bold"
+                    WidthRequest="100" />
+                <custom:CustomEntry x:Name="entryPassword" BorderWidth="1" IsPassword="true" BackgroundColor="Transparent" CornerRadius="10" IsCurvedCornersEnabled="True" BorderColor="#1E4677" FontSize="17" HeightRequest="50" Placeholder="Select a password" TextColor="Black"
+                    FontAttributes="Bold" WidthRequest="100" />
+                <custom:CustomEntry x:Name="entryConfirmPassword" BorderWidth="1" IsPassword="true" BackgroundColor="Transparent" CornerRadius="10" IsCurvedCornersEnabled="True" BorderColor="#1E4677" FontSize="17" HeightRequest="50" Placeholder="Confirm your password" TextColor="Black"
+                    FontAttributes="Bold" WidthRequest="100" />
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Margin="0,20,0,0">
+                <Button Text="SIGN ME UP!" WidthRequest="200" BorderRadius="23" TextColor="White" BackgroundColor="#1E4677" Font="Bold, 15" Clicked="btnSignUp_Clicked"/>
+            </StackLayout>
+            <!--<StackLayout HorizontalOptions="Center">
+                <Label Text="OR" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout>
+                <Frame BackgroundColor="Transparent" BorderColor="#B43A66" CornerRadius="20" Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                            <Label Text="Continue with Insta" VerticalTextAlignment="Center" TextColor="#B43A66" Font="Italic" HorizontalOptions="Start" />
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+                            <Image Source="instagram.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="End" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout>
+                <Frame BackgroundColor="Transparent" BorderColor="#6BAAE8" CornerRadius="20" Padding="10">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                            <Label Text="Continue with Twitter" VerticalTextAlignment="Center" TextColor="#6BAAE8" Font="Italic" HorizontalOptions="Start" />
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+                            <Image Source="twitter.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="End" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>-->
+            <StackLayout HorizontalOptions="Center" Margin="0,20,0,0">
+                <Label HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="By creating a Ballerprofile, you agree to our " FontAttributes="Bold" />
+                            <Span Text="Terms " ForegroundColor="Red" FontAttributes="Bold,Italic" />
+                            <Span Text=" &amp; " FontAttributes="Italic" FontSize="Small" />
+                            <Span Text="Conditions " ForegroundColor="Teal" FontAttributes="Bold,Italic" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

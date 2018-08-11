@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Ballers.WelcomePage" xmlns:local="clr-namespace:Ballers" NavigationPage.HasNavigationBar="false" BackgroundColor="Black">
+    <AbsoluteLayout>
+        <Image x:Name="BgImage" Source="welcomeBackgroundImage.png" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0" AbsoluteLayout.LayoutFlags="All" />
+        <StackLayout Padding="10,40,10,0" AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0" AbsoluteLayout.LayoutFlags="All">
+            <StackLayout HorizontalOptions="Center">
+                <Image Source="logo" HeightRequest="150" WidthRequest="100" />
+            </StackLayout>
+            <StackLayout Spacing="10">
+                <Label Text="Welcome to Ballers" TextColor="White" HorizontalTextAlignment="Center" Font="Bold, 30" />
+                <Label Text="Find the hottest talent outside of pro sports!" TextColor="White" HorizontalTextAlignment="Center" Font="15" />
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="0,150,0,0">
+                <Button Text="Find Your Team" WidthRequest="200" BorderRadius="23" TextColor="White" BackgroundColor="#1E4677" Font="Bold, 15" Clicked="btnFindTeam_Clicked"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Margin="0,50,0,0">
+                <Button Text="Logout" WidthRequest="200" BorderRadius="23" TextColor="White" BackgroundColor="#D73A33" Font="Bold, 15" Clicked="btnLogout_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

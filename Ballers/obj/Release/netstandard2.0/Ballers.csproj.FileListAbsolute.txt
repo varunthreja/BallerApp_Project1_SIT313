@@ -1,0 +1,9 @@
+/Users/varunthreja/Desktop/Ballers/Ballers/bin/Release/netstandard2.0/Ballers.deps.json
+/Users/varunthreja/Desktop/Ballers/Ballers/bin/Release/netstandard2.0/Ballers.dll
+/Users/varunthreja/Desktop/Ballers/Ballers/bin/Release/netstandard2.0/Ballers.pdb
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Release/netstandard2.0/Ballers.csprojResolveAssemblyReference.cache
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Release/netstandard2.0/Ballers.csproj.CoreCompileInputs.cache
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Release/netstandard2.0/Ballers.AssemblyInfoInputs.cache
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Release/netstandard2.0/Ballers.AssemblyInfo.cs
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Release/netstandard2.0/Ballers.dll
+/Users/varunthreja/Desktop/Ballers/Ballers/obj/Release/netstandard2.0/Ballers.pdb

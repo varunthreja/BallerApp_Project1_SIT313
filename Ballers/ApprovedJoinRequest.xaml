@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Ballers.ApprovedJoinRequest" xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations" NavigationPage.HasNavigationBar="false">
+    <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="CONGRATULATIONS!" HorizontalTextAlignment="Center" Font="Bold, Italic, 20"/>
+        </StackLayout>
+        <StackLayout>
+            <Label x:Name="message" Text="Your Request is approved. Welcome to the team. Cheers!! " HorizontalTextAlignment="Center" Font="Bold, Italic"/>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" HeightRequest="50" BackgroundColor="Black">
+            <Button Text="Done" Font="Bold,Italic, 25" VerticalOptions="Center" BackgroundColor="Black" TextColor="White" Clicked="btnDone_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

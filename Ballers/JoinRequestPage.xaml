@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Ballers.JoinRequestPage" xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" xmlns:ffTransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations">
+    <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="YOU'RE ALMOST THERE!" HorizontalTextAlignment="Center" Font="Bold, Italic, 20" />
+        </StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <!--<Image x:Name="teamlogoX" Source="AtleticoMadrid.png" HeightRequest="200" WidthRequest="200"/>-->
+            <ff:CachedImage x:Name="teamlogoX" Source="AtleticoMadrid.png" HeightRequest="100" WidthRequest="100"/>
+            <!--<ff:CachedImage x:Name="teamlogoX" Source="AtleticoMadrid.png" HeightRequest="200" WidthRequest="200">
+                <ff:CachedImage.Transformations>
+                    <ffTransformations:RoundedTransformation Radius="240" />
+                </ff:CachedImage.Transformations>
+            </ff:CachedImage>-->
+        </StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label x:Name="message" Text="test" HorizontalTextAlignment="Center" Font="Bold, Italic" />
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" HeightRequest="50" BackgroundColor="Black">
+            <Button x:Name="joinTeamName" Text="Done" Font="Bold,Italic, 25" VerticalOptions="Center" BackgroundColor="Black" TextColor="White" Clicked="btnDone_Clicked" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
